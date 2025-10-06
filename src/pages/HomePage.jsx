@@ -24,59 +24,60 @@ function HomePage({ userName, onLogout }) {
       { id: 2, title: " Olukoya - Chapter 2", url: "https://www.youtube.com/embed/mjRX4mMbLI8", description: "" },
       { id: 3, title: "UNDERSEIGE", url: "https://www.youtube.com/embed/11FQQv81hDw",   },
       { id: 4, title: "PRAEY", url: "https://www.youtube.com/embed/hsG4HU6cgWY",  description: "Experience a thrilling tale of faith, courage, and the supernatural. When four young doctors face an unseen force in a remote village. Are you ready to confront the unknown? Its a faith-base mo" },
-      { id: 5, title: "Risen", url: "https://www.youtube.com/embed/7TxD3cxUQcc",  description: "Roman soldier investigates Jesus' resurrection." },
-      { id: 6, title: "The Nativity Story", url: "https://www.youtube.com/embed/sFav5yMqfnY",  description: "The story of Jesus' birth." },
-      { id: 7, title: "Son of God", url: "https://www.youtube.com/embed/MhiH0ah-3qw",  description: "Comprehensive story of Jesus' life." },
-      { id: 8, title: "The Gospel of John", url: "https://www.youtube.com/embed/eMuQb0_j7GY",  description: "Word-for-word adaptation of John's Gospel." },
-      { id: 9, title: "Matthew", url: "https://www.youtube.com/embed/QIoUmnSkOXE",  description: "Complete Gospel of Matthew." },
-      { id: 10, title: "Magdalena", url: "https://www.youtube.com/embed/JAPOtjg_5Us", description: "Jesus' ministry through women's eyes." },
-      { id: 11, title: "The Story of Jesus for Children", url: "https://www.youtube.com/embed/F8IPzpcuPGs", description: "Animated version for kids." },
-      { id: 12, title: "Beyond the Gates", url: "https://www.youtube.com/embed/RBY9sfQCRvI", description: "Rwandan genocide story of faith." },
-      { id: 11, title: "The Story of Jesus for Children", url: "https://www.youtube.com/embed/F8IPzpcuPGs", description: "Animated version for kids." },
-      { id: 12, title: "Beyond the Gates", url: "https://www.youtube.com/embed/RBY9sfQCRvI", description: "Rwandan genocide story of faith." }
+      { id: 5, title: "Enoch ", url: "https://www.youtube.com/embed/7TxD3cxUQcc",  description: "A MOVIE BASED ON THE TRUE LIFE STORY OF Pastor EA Adeboye  " },
+      { id: 6, title: "AYABA", url: "https://www.youtube.com/embed/sFav5yMqfnY",  description: "An orphaned maiden rises to become queen, but finds her crown is a cage. Watch the story of Ayaba, the legendary queen who risked everything for her people"}
+,
+      { id: 7, title: "BLACK COLLAR 2", url: "https://www.youtube.com/embed/MhiH0ah-3qw",  description: "Comprehensive story of Jesus' life." },
+      { id: 8, title: "MY PRIVATE LINE TO GOD", url: "https://www.youtube.com/embed/eMuQb0_j7GY",  description: "Word-for-word adaptation of John's Gospel." },
+      { id: 9, title: "PROPHET SUDDENLY 1", url: "https://www.youtube.com/embed/QIoUmnSkOXE" },
+      { id: 10, title: "WAITING WAR", url: "https://www.youtube.com/embed/JAPOtjg_5Us", description: "WAITING WARS explores a couple's long journey to parenthood, facing emotional and spiritual challenges. Their faith is tested as they navigate various options and seek guidance. The film portrays their struggles and the support they receive along the way." },
+      { id: 11, title: "LET GO LET GOD", url: "https://www.youtube.com/embed/F8IPzpcuPGs", description: "Starring Clifton Powell, Let Go and Let God follows two people from vastly different worlds whose lives are rocked after experiencing sudden deaths in their family. They question God as a result, but find the faith they're looking for on an unexpected path"},
+      { id: 12, title: "TA'AVAH", url: "https://www.youtube.com/embed/RBY9sfQCRvI", description: "TA’AVAH – SAVE THE TEENS is a thought-provoking gospel movie from GACEM TV, telling the story of a father’s weakness, a daughter’s tears, and God’s mercy that restores broken hearts." },
+      
+      
     
     ],
     "Worship": [
-      { id: 1, title: "What a Beautiful Name", url: "https://www.youtube.com/embed//LJA_g-_xlCs", pastor: "Hillsong Worship", description: "Powerful worship anthem." },
-      { id: 2, title: "Goodness of God", url: "https://www.youtube.com/embed/t-wG29TxkEc", pastor: "Bethel Music", description: "Celebrating God's unwavering goodness." },
-      { id: 3, title: "Way Maker", url: "https://www.youtube.com/embed/5taka1Ftu-E", pastor: "Sinach", description: "God as our way maker." },
-      { id: 4, title: "Reckless Love", url: "https://www.youtube.com/embed/fem4tFkwUEU", pastor: "Cory Asbury", description: "God's overwhelming, reckless love." },
-      { id: 5, title: "Great Are You Lord", url: "https://www.youtube.com/embed//a276pMl4udQ", pastor: "All Sons & Daughters", description: "Powerful declaration of God's greatness." },
-      { id: 6, title: "O Come to the Altar", url: "https://www.youtube.com/embed/4N-T2OzVNIU", pastor: "Elevation Worship", description: "Invitation to encounter God." },
-      { id: 7, title: "King of Kings", url: "https://www.youtube.com/embed/X8ElWoN0HBE", pastor: "Hillsong Worship", description: "Majestic worship song." },
-      { id: 8, title: "Build My Life", url: "https://www.youtube.com/embed/Dak86UT5G_E", pastor: "Pat Barrett", description: "Surrendering our lives to God." },
-      { id: 9, title: "Graves Into Gardens", url: "https://www.youtube.com/embed/u3K0QnG0uR8", pastor: "Elevation Worship", description: "God's transformative power." },
-      { id: 10, title: "The Blessing", url: "https://www.youtube.com/embed//wP1SYyKp7vU", pastor: "Kari Jobe", description: "Powerful blessing over families." }
+      { id: 1, title: "NAGODE", url: "https://www.youtube.com/embed//LJA_g-_xlCs", pastor: "DUNSIN OYEKAN" },
+      { id: 2, title: "WORSHIP MEDLEY", url: "https://www.youtube.com/embed/t-wG29TxkEc", pastor: "SIMUSOLA AGBEBEI"},
+      { id: 3, title: "YAHWEH SABAOTH", url: "https://www.youtube.com/embed/5taka1Ftu-E", pastor: "NATHANEIL BASSEY"},
+      { id: 4, title: "NO ME WITHOUT YOU", url: "https://www.youtube.com/embed/fem4tFkwUEU", pastor: "DUNSIN OYEKAN" },
+      { id: 5, title: "B'OLA", url: "https://www.youtube.com/embed//a276pMl4udQ", pastor: "SUNMISOLA AGBEBI" },
+      { id: 6, title: "FATHER OF SPIRIT", url: "https://www.youtube.com/embed/4N-T2OzVNIU", pastor: "THEOPHILUS SUNDAY" },
+      { id: 7, title: "DEEPER EXPERIENCE CHANT", url: "https://www.youtube.com/embed/X8ElWoN0HBE", pastor: "ESTHER JONATHAN" },
+      { id: 8, title: "KOSEUNTI", url: "https://www.youtube.com/embed/Dak86UT5G_E", pastor: "SUNMISOLA AGBEBI" },
+      { id: 9, title: "HAGIAZO", url: "https://www.youtube.com/embed/u3K0QnG0uR8", pastor: "DUNSIN OYEKAN"},
+      { id: 10, title: "EMPEROR OF THE UNIVERSE ", url: "https://www.youtube.com/embed//wP1SYyKp7vU", pastor: "DUNSIN OYEKAN FT THEOPHILUS SUNDAY" }
     ],
     "Documentaries": [
-      { id: 1, title: "The Case for Christ", url: "https://www.youtube.com/embed/17Kq9BsM0jU", pastor: "Pure Flix", description: "Evidence for Jesus investigation." },
-      { id: 2, title: "Patterns of Evidence: Exodus", url: "https://www.youtube.com/embed/H6zJOEzVi3A", pastor: "Thinking Man Films", description: "Archaeological evidence for Exodus." },
-      { id: 3, title: "The Star of Bethlehem", url: "https://www.youtube.com/embed/jfdgT8LsoW8", pastor: "Stephen McEveety", description: "Scientific look at the Christmas star." },
-      { id: 4, title: "God's Not Dead", url: "https://www.youtube.com/embed/B-ePCiUgD0Y", pastor: "Pure Flix", description: "College student defends his faith." },
-      { id: 5, title: "The Principle", url: "https://www.youtube.com/embed/jfdgT8LsoW8", pastor: "Rick DeLano", description: "Scientific evidence for God." },
-      { id: 6, title: "Genesis: Paradise Lost", url: "https://www.youtube.com/embed/U0u3-2CGOMQ", pastor: "Creation Today", description: "Defense of biblical creation." },
-      { id: 7, title: "The God Who Speaks", url: "https://www.youtube.com/embed/i_eJqsnPknM", pastor: "American Bible Society", description: "Power of God's Word." },
-      { id: 8, title: "Finger of God", url: "https://www.youtube.com/embed/5HMicy0JD-E", pastor: "Darren Wilson", description: "Documentary on modern miracles." }
+      { id: 1, title: "Sifting The Evidence I", url: "https://www.youtube.com/embed/17Kq9BsM0jU"},
+      { id: 2, title: "Sifting The Evidence II: Exodus", url: "https://www.youtube.com/embed/H6zJOEzVi3A" },
+      { id: 3, title: "OutPouring of the Holyspirit south korea", url: "https://www.youtube.com/embed/jfdgT8LsoW8"},
+      { id: 4, title: "Christian Nationalism", url: "https://www.youtube.com/embed/B-ePCiUgD0Y"},
+      { id: 5, title: "Jesus The Historical Facts", url: "https://www.youtube.com/embed/uXw2zYZ1wxk"},
+      { id: 6, title: "Evolution vs God", url: "https://www.youtube.com/embed/U0u3-2CGOMQ"},
+      { id: 7, title: "Who Was King Herod", url: "https://www.youtube.com/embed/i_eJqsnPknM"},
+      { id: 8, title: "Unmasking the fearless the jewish queen", url: "https://www.youtube.com/embed/5HMicy0JD-E"}
     ],
     "Christian Living": [
-      { id: 1, title: "How to Study the Bible", url: "https://www.youtube.com/embed/8GX4l0iAlcw", pastor: "Bible Project", description: "Study methods for God's Word." },
-      { id: 2, title: "Prayer That Changes Things", url: "https://www.youtube.com/embed//cOhMuI69Gp8", pastor: "Joseph Prince", description: "Understanding prayer power." },
-      { id: 3, title: "Finding Your Purpose", url: "https://www.youtube.com/embed/tJVSG-lgITw", pastor: "Rick Warren", description: "Discovering God's plan for you." },
-      { id: 4, title: "Financial Freedom", url: "https://www.youtube.com/embed/oGkQ-lm39Tc", pastor: "Dave Ramsey", description: "Biblical principles for finances." },
-      { id: 5, title: "Marriage God's Way", url: "https://www.youtube.com/embed/TerYDCsP1ZA", pastor: "Focus on the Family", description: "Building strong Christian marriages." },
-      { id: 6, title: "Parenting with Purpose", url: "https://www.youtube.com/embed/JvbmRofy_aA", pastor: "Dennis and Barbara Rainey", description: "Raising children in faith." },
-      { id: 7, title: "Overcoming Anxiety", url: "https://www.youtube.com/embed/DZFJ8iGDGIk", pastor: "Joyce Meyer", description: "Biblical approach to anxiety." },
-      { id: 8, title: "Spiritual Disciplines", url: "https://www.youtube.com/embed/X5mRnO_t9Ec", pastor: "John Piper", description: "Growing through spiritual practices." }
+      { id: 1, title: "How God saved me from Addiction", url: "https://www.youtube.com/embed/8GX4l0iAlcw", pastor: " Pastor Femi Lazarus" },
+      { id: 2, title: "The God Of Restoration", url: "https://www.youtube.com/embed//cOhMuI69Gp8", pastor: " Pastor Femi Lazarus" },
+      { id: 3, title: "WE WERE MARRIED FOR ONLY FOUR MONTHS, I ALMOST GOT USED FOR RITUALS.", url: "https://www.youtube.com/embed/tJVSG-lgITw", pastor: " Pastor Femi Lazarus" },
+      { id: 4, title: "Finally Found Love", url: "https://www.youtube.com/embed/oGkQ-lm39Tc", pastor: " Pastor Femi Lazarus" },
+      { id: 5, title: "The Life Style Wasting Many", url: "https://www.youtube.com/embed/TerYDCsP1ZA", pastor: " Pastor Femi Lazarus" },
+      { id: 6, title: "What is Afro Gospel", url: "https://www.youtube.com/embed/JvbmRofy_aA", pastor: " Pastor Femi Lazarus" },
+      { id: 7, title: "What is Story", url: "https://www.youtube.com/embed/DZFJ8iGDGIk", pastor: " Pastor Femi Lazarus"},
+      { id: 8, title: "Victory at Last", url: "https://www.youtube.com/embed/X5mRnO_t9Ec", pastor: " Pastor Femi Lazarus" }
     ],
     "Christian Anime": [
-      { id: 1, title: "Superbook - The First Christmas", url: "https://www.youtube.com/embed/4dzjD5FxJPg", pastor: "Superbook", description: "Animated Christmas story." },
-      { id: 2, title: "The Beginner's Bible", url: "https://www.youtube.com/embed/UhuSolM_zZg", pastor: "Beginner's Bible", description: "Simple animated Bible stories." },
-      { id: 3, title: "Animated Stories from the Bible", url: "https://www.youtube.com/embed/UhuSolM_zZg", pastor: "Nest Entertainment", description: "Classic Bible stories animated." },
-      { id: 4, title: "The Story of Jesus Animation", url: "https://www.youtube.com/embed/Nt4kCgt_Kj4", pastor: "Christian Anime Studios", description: "Jesus' life in animation." },
-      { id: 5, title: "Noah's Ark Adventure", url: "https://www.youtube.com/embed/V6QYoWEmXLI", pastor: "Genesis Animation", description: "Noah's story for children." },
-      { id: 6, title: "David and Goliath", url: "https://www.youtube.com/embed/32_Izk21ktw", pastor: "BibleToons", description: "Classic underdog story." },
-      { id: 7, title: "Joseph: King of Dreams", url: "https://www.youtube.com/embed/qBSTCBSlf9Q", pastor: "DreamWorks", description: "Joseph's journey to Egypt." },
-      { id: 8, title: "The Prince of Egypt", url: "https://www.youtube.com/embed/Ty3vrOoWtNM", pastor: "DreamWorks", description: "Moses' epic story." }
+      { id: 1, title: "Superbook - In the Beginning", url: "https://www.youtube.com/embed/4dzjD5FxJPg" },
+      { id: 2, title: "The Test I", url: "https://www.youtube.com/embed/UhuSolM_zZg" },
+      { id: 3, title: "The Test II", url: "https://www.youtube.com/embed/UhuSolM_zZg" },
+      { id: 4, title: "Let My People go", url: "https://www.youtube.com/embed/Nt4kCgt_Kj4" },
+      { id: 5, title: "The Ten Commandement", url: "https://www.youtube.com/embed/V6QYoWEmXLI" },
+      { id: 6, title: "The Giant Adventure", url: "https://www.youtube.com/embed/32_Izk21ktw" },
+      { id: 7, title: "ROAR", url: "https://www.youtube.com/embed/qBSTCBSlf9Q" },
+      { id: 8, title: "The First Christmas", url: "https://www.youtube.com/embed/Ty3vrOoWtNM"}
     ]
   };
 
