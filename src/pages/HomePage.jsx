@@ -293,7 +293,7 @@ function HomePage({ userName, onLogout }) {
 
       <footer className="footer">
         <div className="container">
-          <p>&copy; 2024 FaithStream. All rights reserved.</p>
+          <p>&copy; 2025 FaithStream. All rights reserved.</p>
         </div>
       </footer>
     </div>
