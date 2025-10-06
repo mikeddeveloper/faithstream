@@ -1,0 +1,53 @@
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #4a90e2, #50c9c3);
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.welcome-box {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 3rem;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.welcome-box h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.welcome-box p {
+  margin-bottom: 1.5rem;
+}
+
+.welcome-box input {
+  padding: 0.8rem 1rem;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  margin-bottom: 1rem;
+  outline: none;
+  font-size: 1rem;
+}
+
+.welcome-box button {
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.welcome-box button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.05);
+}

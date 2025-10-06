@@ -1,0 +1,144 @@
+/* General Page Style */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(120deg, #0d0d0d, #1a1a40);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.welcome-page {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #0d0d0d, #1a1a40, #000428);
+  overflow: hidden;
+}
+
+/* Subtle moving background animation */
+.welcome-page::before {
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, #00bcd4 0%, transparent 70%),
+              radial-gradient(circle at 70% 70%, #007bff 0%, transparent 70%);
+  opacity: 0.05;
+  animation: moveGradient 12s infinite alternate ease-in-out;
+}
+
+@keyframes moveGradient {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-20%, -20%);
+  }
+}
+
+/* Glass Card Style */
+.welcome-card {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 3rem 4rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 40px rgba(0, 188, 212, 0.1);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.welcome-card:hover {
+  box-shadow: 0 0 50px rgba(0, 188, 212, 0.2);
+}
+
+/* Greeting Text */
+.greeting-text {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+  background: linear-gradient(45deg, #00bcd4, #007bff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+  from {
+    text-shadow: 0 0 5px #00bcd4;
+  }
+  to {
+    text-shadow: 0 0 20px #00bcd4;
+  }
+}
+
+.app-title {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.app-title span {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+/* Input + Button */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name-input {
+  padding: 0.8rem 1.2rem;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.name-input:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.5);
+}
+
+.name-input::placeholder {
+  color: #aaa;
+}
+
+.continue-btn {
+  padding: 0.9rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #007bff, #00bcd4);
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+}
+
+.continue-btn:hover {
+  transform: scale(1.07);
+  background: linear-gradient(45deg, #00bcd4, #007bff);
+  box-shadow: 0 0 25px rgba(0, 188, 212, 0.6);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+}
