@@ -138,7 +138,7 @@ function Login({ onLogin }) {
                       className="form-input"
                       required
                     />
-                    <div className="input-icon">👤</div>
+                    <div className="input-icon"></div>
                   </div>
                 </div>
 
@@ -154,7 +154,7 @@ function Login({ onLogin }) {
                       className="form-input"
                       required
                     />
-                    <div className="input-icon">🔒</div>
+                    <div className="input-icon"></div>
                   </div>
                 </div>
 
