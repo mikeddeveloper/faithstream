@@ -14,7 +14,7 @@ function Login({ onLogin }) {
 
   useEffect(() => {
     AOS.init({ 
-      duration: 1200,
+      duration: 1000,
       once: true,
       offset: 100
     });
@@ -24,9 +24,9 @@ function Login({ onLogin }) {
       const hour = now.getHours();
       const minutes = now.getMinutes().toString().padStart(2, '0');
       
-      if (hour < 12) setGreeting("Good Morning 🌅");
-      else if (hour < 18) setGreeting("Good Afternoon ☀️");
-      else setGreeting("Good Evening 🌙");
+      if (hour < 12) setGreeting("Good Morning");
+      else if (hour < 18) setGreeting("Good Afternoon");
+      else setGreeting("Good Evening");
       
       setCurrentTime(`${hour % 12 || 12}:${minutes} ${hour >= 12 ? 'PM' : 'AM'}`);
     };
@@ -60,7 +60,7 @@ function Login({ onLogin }) {
         onLogin(name);
       }
     } catch (error) {
-      console.error("❌ Error saving user:", error);
+      console.error("Error saving user:", error);
       alert("Error signing in. Please try again.");
     } finally {
       setLoading(false);
@@ -69,95 +69,134 @@ function Login({ onLogin }) {
 
   return (
     <div className="login-container">
-      {/* Animated Background Elements */}
-      <div className="bg-shapes">
-        <div className="shape shape-1" data-aos="fade-down-right" data-aos-delay="200"></div>
-        <div className="shape shape-2" data-aos="fade-up-left" data-aos-delay="400"></div>
-        <div className="shape shape-3" data-aos="fade-up-right" data-aos-delay="600"></div>
-        <div className="shape shape-4" data-aos="fade-down-left" data-aos-delay="800"></div>
-      </div>
-
-      <div className="login-content">
-        {/* Header Section */}
-        <header className="login-header" data-aos="fade-down" data-aos-delay="300">
-          <div className="logo" data-aos="zoom-in" data-aos-delay="500">
-            ⛪ FaithStream
+      {/* Background with subtle gradient */}
+      <div className="background-overlay"></div>
+      
+      {/* Header */}
+      <header className="login-header" data-aos="fade-down">
+        <div className="header-content">
+          <div className="logo">
+            <div className="logo-icon">⛪</div>
+            <span className="logo-text">FaithStream</span>
           </div>
-          <div className="time-display" data-aos="fade-left" data-aos-delay="700">
+          <div className="time-display">
+            <span className="time-icon">🕒</span>
             {currentTime}
           </div>
-        </header>
+        </div>
+      </header>
 
-        {/* Main Login Box */}
-        <div className="login-center">
-          <div className="login-card" data-aos="zoom-in" data-aos-delay="400">
-            <div className="card-header" data-aos="fade-up" data-aos-delay="600">
-              <div className="welcome-icon" data-aos="bounce-in" data-aos-delay="800">
-                ✨
+      {/* Main Content */}
+      <main className="login-main">
+        <div className="login-wrapper">
+          {/* Left Side - Branding */}
+          <div className="brand-section" data-aos="fade-right">
+            <div className="brand-content">
+              <h1 className="brand-title">
+                Stream <span className="accent-text">Faith</span>
+                <br />
+                Spread <span className="accent-text">Hope</span>
+              </h1>
+              <p className="brand-subtitle">
+                Access inspiring Christian content that transforms lives and strengthens faith journeys.
+              </p>
+              <div className="feature-list">
+                <div className="feature-item">
+                  <span className="feature-icon">🎬</span>
+                  <span>Biblical Movies & Series</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">🎵</span>
+                  <span>Worship & Music</span>
+                </div>
+                <div className="feature-item">
+                  <span className="feature-icon">📚</span>
+                  <span>Teaching & Documentaries</span>
+                </div>
               </div>
-              <h1 data-aos="fade-up" data-aos-delay="700">{greeting}</h1>
-              <p data-aos="fade-up" data-aos-delay="800">Welcome to your spiritual journey</p>
             </div>
+          </div>
 
-            <form onSubmit={handleSubmit} className="login-form">
-              <div className="input-group" data-aos="fade-right" data-aos-delay="900">
-                <div className="input-icon">👤</div>
-                <input
-                  type="text"
-                  placeholder="Enter your name..."
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  className="login-input"
-                />
+          {/* Right Side - Login Form */}
+          <div className="form-section" data-aos="fade-left" data-aos-delay="200">
+            <div className="form-container">
+              <div className="form-header">
+                <h2 className="form-greeting">{greeting}</h2>
+                <p className="form-welcome">Welcome back to your spiritual sanctuary</p>
               </div>
 
-              <div className="input-group" data-aos="fade-left" data-aos-delay="1000">
-                <div className="input-icon">🔒</div>
-                <input
-                  type="password"
-                  placeholder="Enter your password..."
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  className="login-input"
-                />
+              <form onSubmit={handleSubmit} className="login-form">
+                <div className="form-group" data-aos="fade-up" data-aos-delay="300">
+                  <label htmlFor="name" className="form-label">Your Name</label>
+                  <div className="input-container">
+                    <input
+                      id="name"
+                      type="text"
+                      placeholder="Enter your full name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                      className="form-input"
+                      required
+                    />
+                    <div className="input-icon">👤</div>
+                  </div>
+                </div>
+
+                <div className="form-group" data-aos="fade-up" data-aos-delay="400">
+                  <label htmlFor="password" className="form-label">Password</label>
+                  <div className="input-container">
+                    <input
+                      id="password"
+                      type="password"
+                      placeholder="Enter your password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      className="form-input"
+                      required
+                    />
+                    <div className="input-icon">🔒</div>
+                  </div>
+                </div>
+
+                <button 
+                  type="submit" 
+                  disabled={loading}
+                  className="submit-btn"
+                  data-aos="fade-up" 
+                  data-aos-delay="500"
+                >
+                  <span className="btn-content">
+                    {loading ? (
+                      <>
+                        <div className="spinner"></div>
+                        Authenticating...
+                      </>
+                    ) : (
+                      <>
+                        <span className="btn-text">Enter FaithStream</span>
+                        <span className="btn-arrow">→</span>
+                      </>
+                    )}
+                  </span>
+                </button>
+              </form>
+
+              <div className="form-footer" data-aos="fade-up" data-aos-delay="600">
+                <p className="security-note">
+                  🔒 Your spiritual journey is secure with us
+                </p>
               </div>
-
-              <button 
-                type="submit" 
-                disabled={loading}
-                className="login-btn"
-                data-aos="zoom-in" 
-                data-aos-delay="1100"
-              >
-                <span className="btn-content">
-                  {loading ? (
-                    <>
-                      <div className="spinner"></div>
-                      Signing In...
-                    </>
-                  ) : (
-                    <>
-                      Continue Your Journey 
-                      <span className="btn-arrow">🚀</span>
-                    </>
-                  )}
-                </span>
-              </button>
-            </form>
-
-            <div className="login-footer" data-aos="fade-up" data-aos-delay="1200">
-              <p>Stream faith, spread hope ✨</p>
             </div>
           </div>
         </div>
+      </main>
 
-        {/* Floating Elements */}
-        <div className="floating-elements">
-          <div className="floating-icon" data-aos="float" data-aos-delay="1000">🎬</div>
-          <div className="floating-icon" data-aos="float" data-aos-delay="1200">🙏</div>
-          <div className="floating-icon" data-aos="float" data-aos-delay="1400">🌟</div>
+      {/* Footer */}
+      <footer className="login-footer">
+        <div className="footer-content">
+          <p>&copy; 2025 FaithStream. Elevating faith through digital media.</p>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }
